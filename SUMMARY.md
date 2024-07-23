@@ -1,3 +1,17 @@
 # Table of contents
 
-* [Page](README.md)
+* [Uruk Bartas - IOTA EVM Ready](README.md)
+* [😉 Introduction](introduction.md)
+* [🧰 Required Tools](required-tools.md)
+* [📈 Getting Started](getting-started.md)
+* [⚔️ Game Mechanics](game-mechanics/README.md)
+  * [🛠️ Blacksmith](game-mechanics/blacksmith.md)
+  * [💀 Adventures](game-mechanics/adventures.md)
+* [💎 Rarities](rarities.md)
+* [📜 Detailed roadmap](detailed-roadmap.md)
+* [Security and Privacy](security-and-privacy.md)
+* [Frequently Asked Questions (FAQ):](frequently-asked-questions-faq.md)
+* [Contact and Support](contact-and-support.md)
+* [Tutorials](tutorials/README.md)
+  * [Sending Items to Other Players](tutorials/sending-items-to-other-players.md)
+* [🕵️ Smart contracts](smart-contracts.md)

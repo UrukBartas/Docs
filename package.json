@@ -1,0 +1,15 @@
+{
+  "name": "docs",
+  "version": "1.0.0",
+  "description": "---\r description: >-\r   Embark on epic adventures in Uruk Bartas! Play, Battle, Earn! Welcome to the\r   ultimate #P2E blockchain game\r cover: .gitbook/assets/cover-orc.png\r coverY: 0\r layout:\r   cover:\r     visible: true\r     size: hero\r   title:\r     visible: true\r   description:\r     visible: true\r   tableOfContents:\r     visible: true\r   outline:\r     visible: true\r   pagination:\r     visible: true\r ---",
+  "main": "generate-chances-docs.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.2"
+  }
+}

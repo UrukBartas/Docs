@@ -15,3 +15,10 @@
 * [Tutorials](tutorials/README.md)
   * [Sending Items to Other Players](tutorials/sending-items-to-other-players.md)
 * [🕵️ Smart contracts](smart-contracts.md)
+
+## In-Game Chances
+
+* [Ganked Monsters Rates](in-game-chances/ganked-monsters-rates.md)
+* [Drop Rates Quest](in-game-chances/drop-rates-quest.md)
+* [Lootbox Drop Rate](in-game-chances/lootbox-drop-rate.md)
+* [Experience Factors](in-game-chances/factors.md)

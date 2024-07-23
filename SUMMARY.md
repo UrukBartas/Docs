@@ -7,6 +7,11 @@
 * [⚔️ Game Mechanics](game-mechanics/README.md)
   * [🛠️ Blacksmith](game-mechanics/blacksmith.md)
   * [💀 Adventures](game-mechanics/adventures.md)
+* [🔮 In-game chances](in-game-chances/README.md)
+ * [Ganked Monsters Rates](in-game-chances/ganked-monsters-rates.md)
+ * [Drop Rates Quest](in-game-chances/drop-rates-quest.md)
+ * [Lootbox Drop Rate](in-game-chances/lootbox-drop-rate.md)
+ * [Experience Factors](in-game-chances/factors.md)
 * [💎 Rarities](rarities.md)
 * [📜 Detailed roadmap](detailed-roadmap.md)
 * [Security and Privacy](security-and-privacy.md)
@@ -15,10 +20,3 @@
 * [Tutorials](tutorials/README.md)
   * [Sending Items to Other Players](tutorials/sending-items-to-other-players.md)
 * [🕵️ Smart contracts](smart-contracts.md)
-
-## In-Game Chances
-
-* [Ganked Monsters Rates](in-game-chances/ganked-monsters-rates.md)
-* [Drop Rates Quest](in-game-chances/drop-rates-quest.md)
-* [Lootbox Drop Rate](in-game-chances/lootbox-drop-rate.md)
-* [Experience Factors](in-game-chances/factors.md)

@@ -81,9 +81,9 @@ function generateMarkdownFactors(data, title) {
     let markdownContent = `# ${title}\n\n`;
     markdownContent += `| Factor                  | Value        |\n`;
     markdownContent += `|-------------------------|--------------|\n`;
-    markdownContent += `| Experience              | ${(data.experience * 100).toFixed(2)}%  |\n`;
-    markdownContent += `| Item Shop Price Factor  | ${(data.itemShopItemPriceFactor * 100).toFixed(2)}%  |\n`;
-    markdownContent += `| Item Roll Price Factor  | ${(data.itemRollPriceFactor * 100).toFixed(2)}%  |\n`;
+    markdownContent += `| Experience              | ${data.experience}  |\n`;
+    markdownContent += `| Item Shop Price Factor  | ${data.itemShopItemPriceFactor}  |\n`;
+    markdownContent += `| Item Roll Price Factor  | ${data.itemRollPriceFactor}  |\n`;
     markdownContent += `\n`;
 
     markdownContent += `## Descriptions\n\n`;

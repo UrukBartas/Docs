@@ -20,6 +20,10 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Remove old game-mechanics content
+        run: |
+          rm -rf game-mechanics/*
+
       - name: Run documentation script
         run: node generate-chances-docs.js
 

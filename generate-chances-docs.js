@@ -9,6 +9,7 @@ const API_URLS = [
     { url: `${baseApi}stats/drop-rates-quest`, name: 'drop-rates-quest' },
     { url: `${baseApi}stats/lootbox-drop-rate/Lootbox`, name: 'lootbox-drop-rate' },
     { url: `${baseApi}stats/factors`, name: 'factors' },
+    { url: `${baseApi}stats/get-quest-roll`, name: 'quest-roll' },  // Nueva URL agregada aquí
 ];
 
 // Función para obtener datos del backend
@@ -78,9 +79,37 @@ function generateMarkdownLootboxDropRates(data, title) {
 // Función para generar contenido Markdown para "factors"
 function generateMarkdownFactors(data, title) {
     let markdownContent = `# ${title}\n\n`;
-    markdownContent += `| Factor      | Value        |\n`;
-    markdownContent += `|-------------|--------------|\n`;
-    markdownContent += `| Experience  | ${(data.experience * 100).toFixed(2)}%  |\n`;
+    markdownContent += `| Factor                  | Value        |\n`;
+    markdownContent += `|-------------------------|--------------|\n`;
+    markdownContent += `| Experience              | ${(data.experience * 100).toFixed(2)}%  |\n`;
+    markdownContent += `| Item Shop Price Factor  | ${(data.itemShopItemPriceFactor * 100).toFixed(2)}%  |\n`;
+    markdownContent += `| Item Roll Price Factor  | ${(data.itemRollPriceFactor * 100).toFixed(2)}%  |\n`;
+    markdownContent += `\n`;
+
+    markdownContent += `## Descriptions\n\n`;
+    markdownContent += `- **Experience**: The factor of experience gained in the game. If it is 1, there is no bonus or penalty on the base experience obtained.\n`;
+    markdownContent += `- **Item Shop Price Factor**: The factor for the prices of items in the shop.\n`;
+    markdownContent += `- **Item Roll Price Factor**: The factor paid over the price of item rolls. Each time you roll, you pay more, but you can get better items.\n`;
+
+    return markdownContent;
+}
+
+// Nueva función para generar contenido Markdown para "quest-roll"
+function generateMarkdownQuestRoll(data, title) {
+    let markdownContent = `# ${title}\n\n`;
+
+    data.forEach(item => {
+        const rangeText = `${item.range[0]} - ${item.range[1] !== null ? item.range[1] : '∞'}`;
+        markdownContent += `## Level Range: ${rangeText}\n\n`;
+        markdownContent += `| Rarity    | Chance       |\n`;
+        markdownContent += `|-----------|--------------|\n`;
+
+        for (const rarity in item.chances) {
+            markdownContent += `| ${rarity.charAt(0) + rarity.slice(1).toLowerCase()} | ${(item.chances[rarity] * 100).toFixed(2)}% |\n`;
+        }
+
+        markdownContent += '\n';
+    });
 
     return markdownContent;
 }
@@ -104,6 +133,8 @@ async function main() {
                 markdownContent = generateMarkdownLootboxDropRates(data, name.replace(/-/g, ' ').replace(/^\w/, c => c.toUpperCase()));
             } else if (name === 'factors') {
                 markdownContent = generateMarkdownFactors(data, name.replace(/-/g, ' ').replace(/^\w/, c => c.toUpperCase()));
+            } else if (name === 'quest-roll') {  // Nuevo caso manejado aquí
+                markdownContent = generateMarkdownQuestRoll(data, name.replace(/-/g, ' ').replace(/^\w/, c => c.toUpperCase()));
             }
             const filePath = path.join(dir, `${name}.md`);
             fs.writeFileSync(filePath, markdownContent);

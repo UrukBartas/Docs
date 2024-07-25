@@ -2,9 +2,9 @@
 
 | Factor                  | Value        |
 |-------------------------|--------------|
-| Experience              | 100.00%  |
-| Item Shop Price Factor  | 101.20%  |
-| Item Roll Price Factor  | 101.50%  |
+| Experience              | 1  |
+| Item Shop Price Factor  | 1.012  |
+| Item Roll Price Factor  | 1.015  |
 
 ## Descriptions
 

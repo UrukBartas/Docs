@@ -5,48 +5,48 @@
 | Rarity of Item | Chance       |
 |----------------|--------------|
 | Common | 68.00% |
-| Uncommon | 23.00% |
-| Epic | 6.50% |
-| Legendary | 2.00% |
-| Mythic | 0.50% |
+| Uommon | 23.00% |
+| Eommon | 6.50% |
+| Lommon | 2.00% |
+| Mommon | 0.50% |
 
 ## Uncommon Lootbox
 
 | Rarity of Item | Chance       |
 |----------------|--------------|
-| Common | 50.00% |
+| Cncommon | 50.00% |
 | Uncommon | 35.00% |
-| Epic | 10.00% |
-| Legendary | 4.00% |
-| Mythic | 1.00% |
+| Encommon | 10.00% |
+| Lncommon | 4.00% |
+| Mncommon | 1.00% |
 
 ## Epic Lootbox
 
 | Rarity of Item | Chance       |
 |----------------|--------------|
-| Common | 20.00% |
-| Uncommon | 25.00% |
+| Cpic | 20.00% |
+| Upic | 25.00% |
 | Epic | 42.50% |
-| Legendary | 10.00% |
-| Mythic | 2.50% |
+| Lpic | 10.00% |
+| Mpic | 2.50% |
 
 ## Legendary Lootbox
 
 | Rarity of Item | Chance       |
 |----------------|--------------|
-| Common | 5.00% |
-| Uncommon | 20.00% |
-| Epic | 45.00% |
+| Cegendary | 5.00% |
+| Uegendary | 20.00% |
+| Eegendary | 45.00% |
 | Legendary | 25.00% |
-| Mythic | 5.00% |
+| Megendary | 5.00% |
 
 ## Mythic Lootbox
 
 | Rarity of Item | Chance       |
 |----------------|--------------|
-| Common | 0.00% |
-| Uncommon | 0.00% |
-| Epic | 15.00% |
-| Legendary | 50.00% |
+| Cythic | 0.00% |
+| Uythic | 0.00% |
+| Eythic | 15.00% |
+| Lythic | 50.00% |
 | Mythic | 35.00% |
 

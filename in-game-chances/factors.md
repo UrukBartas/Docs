@@ -4,7 +4,7 @@
 |-------------------------|--------------|
 | Experience              | 1  |
 | Item Shop Price Factor  | 1.012  |
-| Item Roll Price Factor  | 1.015  |
+| Item Roll Price Factor  | 1.04  |
 
 ## Descriptions
 

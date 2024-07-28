@@ -4,69 +4,69 @@
 
 | Rarity    | Chance       |
 |-----------|--------------|
-| Common | 5500.00% |
-| Uncommon | 3500.00% |
-| Epic | 900.00% |
-| Legendary | 90.00% |
-| Mythic | 10.00% |
+| Common | 55.00% |
+| Uncommon | 35.00% |
+| Epic | 9.00% |
+| Legendary | 0.90% |
+| Mythic | 0.10% |
 
 ## Rerolls: 5+
 
 | Rarity    | Chance       |
 |-----------|--------------|
-| Common | 5000.00% |
-| Uncommon | 3500.00% |
-| Epic | 1300.00% |
-| Legendary | 150.00% |
-| Mythic | 50.00% |
+| Common | 50.00% |
+| Uncommon | 35.00% |
+| Epic | 13.00% |
+| Legendary | 1.50% |
+| Mythic | 0.50% |
 
 ## Rerolls: 10+
 
 | Rarity    | Chance       |
 |-----------|--------------|
-| Common | 4500.00% |
-| Uncommon | 3500.00% |
-| Epic | 1500.00% |
-| Legendary | 300.00% |
-| Mythic | 200.00% |
+| Common | 45.00% |
+| Uncommon | 35.00% |
+| Epic | 15.00% |
+| Legendary | 3.00% |
+| Mythic | 2.00% |
 
 ## Rerolls: 20+
 
 | Rarity    | Chance       |
 |-----------|--------------|
-| Common | 4000.00% |
-| Uncommon | 3500.00% |
-| Epic | 1700.00% |
-| Legendary | 600.00% |
-| Mythic | 200.00% |
+| Common | 40.00% |
+| Uncommon | 35.00% |
+| Epic | 17.00% |
+| Legendary | 6.00% |
+| Mythic | 2.00% |
 
 ## Rerolls: 30+
 
 | Rarity    | Chance       |
 |-----------|--------------|
-| Common | 3500.00% |
-| Uncommon | 3000.00% |
-| Epic | 2000.00% |
-| Legendary | 1000.00% |
-| Mythic | 500.00% |
+| Common | 35.00% |
+| Uncommon | 30.00% |
+| Epic | 20.00% |
+| Legendary | 10.00% |
+| Mythic | 5.00% |
 
 ## Rerolls: 40+
 
 | Rarity    | Chance       |
 |-----------|--------------|
-| Common | 3000.00% |
-| Uncommon | 2500.00% |
-| Epic | 2200.00% |
-| Legendary | 1500.00% |
-| Mythic | 800.00% |
+| Common | 30.00% |
+| Uncommon | 25.00% |
+| Epic | 22.00% |
+| Legendary | 15.00% |
+| Mythic | 8.00% |
 
 ## Rerolls: 50+
 
 | Rarity    | Chance       |
 |-----------|--------------|
-| Common | 2500.00% |
-| Uncommon | 2000.00% |
-| Epic | 2500.00% |
-| Legendary | 2000.00% |
-| Mythic | 1000.00% |
+| Common | 25.00% |
+| Uncommon | 20.00% |
+| Epic | 25.00% |
+| Legendary | 20.00% |
+| Mythic | 10.00% |
 

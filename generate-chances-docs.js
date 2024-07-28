@@ -125,7 +125,7 @@ function generateMarkdownRarityChancesShopRolls(data, title) {
         markdownContent += `|-----------|--------------|\n`;
 
         for (const rarity in item.chances) {
-            markdownContent += `| ${rarity.charAt(0) + rarity.slice(1).toLowerCase()} | ${(item.chances[rarity] * 100).toFixed(2)}% |\n`;
+            markdownContent += `| ${rarity.charAt(0) + rarity.slice(1).toLowerCase()} | ${(item.chances[rarity]).toFixed(2)}% |\n`;
         }
 
         markdownContent += '\n';

@@ -13,6 +13,7 @@
   - [Item Drop Rates in Quest](in-game-chances/drop-rates-quest.md)
   - [Lootbox Drop Rate](in-game-chances/lootbox-drop-rate.md)
   - [Factors](in-game-chances/factors.md)
+  - [Rarity Chances on Shop Rolls](in-game-chances/rarity-chances-shop-rolls.md)
 - [💎 Rarities](rarities.md)
 - [📜 Detailed roadmap](detailed-roadmap.md)
 - [Security and Privacy](security-and-privacy.md)

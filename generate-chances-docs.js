@@ -9,7 +9,8 @@ const API_URLS = [
     { url: `${baseApi}stats/drop-rates-quest`, name: 'drop-rates-quest' },
     { url: `${baseApi}stats/lootbox-drop-rate/Lootbox`, name: 'lootbox-drop-rate' },
     { url: `${baseApi}stats/factors`, name: 'factors' },
-    { url: `${baseApi}stats/get-quest-roll`, name: 'quest-roll' },  // Nueva URL agregada aquí
+    { url: `${baseApi}stats/get-quest-roll`, name: 'quest-roll' },
+    { url: `${baseApi}stats/rarity-chances-shop-rolls`, name: 'rarity-chances-shop-rolls' },  // Nueva URL agregada aquí
 ];
 
 // Función para obtener datos del backend
@@ -67,7 +68,7 @@ function generateMarkdownLootboxDropRates(data, title) {
         markdownContent += `|----------------|--------------|\n`;
 
         for (const rarity in data[lootbox]) {
-            markdownContent += `| ${rarity.charAt(0) + rarity.slice(1).toLowerCase()} | ${(data[lootbox][rarity] * 100).toFixed(2)}% |\n`;
+            markdownContent += `| ${rarity.charAt(0) + lootbox.slice(1).toLowerCase()} | ${(data[lootbox][rarity] * 100).toFixed(2)}% |\n`;
         }
 
         markdownContent += '\n';
@@ -94,13 +95,32 @@ function generateMarkdownFactors(data, title) {
     return markdownContent;
 }
 
-// Nueva función para generar contenido Markdown para "quest-roll"
+// Función para generar contenido Markdown para "quest-roll"
 function generateMarkdownQuestRoll(data, title) {
     let markdownContent = `# ${title}\n\n`;
 
     data.forEach(item => {
         const rangeText = `${item.range[0]} - ${item.range[1] !== null ? item.range[1] : '∞'}`;
         markdownContent += `## Level Range: ${rangeText}\n\n`;
+        markdownContent += `| Rarity    | Chance       |\n`;
+        markdownContent += `|-----------|--------------|\n`;
+
+        for (const rarity in item.chances) {
+            markdownContent += `| ${rarity.charAt(0) + rarity.slice(1).toLowerCase()} | ${(item.chances[rarity] * 100).toFixed(2)}% |\n`;
+        }
+
+        markdownContent += '\n';
+    });
+
+    return markdownContent;
+}
+
+// Nueva función para generar contenido Markdown para "rarity-chances-shop-rolls"
+function generateMarkdownRarityChancesShopRolls(data, title) {
+    let markdownContent = `# ${title}\n\n`;
+
+    data.forEach(item => {
+        markdownContent += `## Rerolls: ${item.minRerolls}+\n\n`;
         markdownContent += `| Rarity    | Chance       |\n`;
         markdownContent += `|-----------|--------------|\n`;
 
@@ -133,8 +153,10 @@ async function main() {
                 markdownContent = generateMarkdownLootboxDropRates(data, name.replace(/-/g, ' ').replace(/^\w/, c => c.toUpperCase()));
             } else if (name === 'factors') {
                 markdownContent = generateMarkdownFactors(data, name.replace(/-/g, ' ').replace(/^\w/, c => c.toUpperCase()));
-            } else if (name === 'quest-roll') {  // Nuevo caso manejado aquí
+            } else if (name === 'quest-roll') {
                 markdownContent = generateMarkdownQuestRoll(data, name.replace(/-/g, ' ').replace(/^\w/, c => c.toUpperCase()));
+            } else if (name === 'rarity-chances-shop-rolls') {  // Nuevo caso manejado aquí
+                markdownContent = generateMarkdownRarityChancesShopRolls(data, name.replace(/-/g, ' ').replace(/^\w/, c => c.toUpperCase()));
             }
             const filePath = path.join(dir, `${name}.md`);
             fs.writeFileSync(filePath, markdownContent);

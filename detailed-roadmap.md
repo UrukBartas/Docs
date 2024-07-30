@@ -15,15 +15,15 @@ description: Our roadmap is meant to be separated in 4 main phases or milestones
     * **Leaderboard.** Climb the ranks and showcase your prowess on our leaderboard. Filter through different metrics like level and equipment to see where you stand among fellow adventurers. ✅
     * **Shop Implementation.** Enhance your performance in battle by purchasing items from our shop. Utilize the Golden Uruk token to acquire gear and participate in Daily Rolls or Premium Rolls to refresh available items, adding an exciting twist to your shopping experience. ✅
     * **Bridge Section.** Players will be able to export items to their wallets and also their Golden Uruks, and viceversa. ✅
-    * **Configuration.** Customize your character's configuration to suit your playstyle and preferences. ⌛
-    * Release documentation, such as Roadmap, Lightpaper & game docs. ⌛
+    * **Configuration.** Customize your character's configuration to suit your playstyle and preferences. ✅
+    * Release documentation, such as Roadmap, Lightpaper & game docs. ✅
     * **Testing & Integration of Community Feedback:** Incorporate valuable insights from our players to refine and enhance the gaming experience. ⌛
-    * **Join Touchpoint Program** ⌛
+    * **Join Touchpoint Program** ✅
     * **Deploy mobile version (Google Play Store & App Store)** ⌛
 * **Phase 2 - Marketing & Audit**
   *   **Audit:** Prioritize the security and integrity of our platform with a thorough Smart Contract (SC) audit conducted by reputable firms like AuditOne or Shieldify. This audit ensures that our systems meet the highest standards of reliability and trustworthiness, providing peace of mind to our players. ⌛
 
-      **Marketing:** Launch a strategic marketing campaign to amplify our presence and engage our community:
+      **Marketing:** Launch a strategic marketing campaign to amplify our presence and engage our community: ⌛
 
       * **Tide Campaign Setup:** Roll out a Tide Campaign featuring exciting giveaways and incentives to attract new players and reward our loyal community members.
       * **Giveaway Campaign on X:** Extend our reach with a targeted giveaway campaign on platforms such as social media, forums, or gaming communities, fostering excitement and generating buzz around "Uruk Bartas."
@@ -47,9 +47,9 @@ description: Our roadmap is meant to be separated in 4 main phases or milestones
 
       **PvP Addition:**
 
-      * **Duels:** Implement one-on-one battles between players, offering the opportunity to wager items or Golden Uruk coins for added stakes.
-      * **Hardcore Duels:** Introduce intense duels where players risk losing items permanently, intensifying the thrill of competition.
-      * **Tournaments:** Enable players to participate in organized tournaments, featuring structured gameplay and lucrative rewards for top performers.
+      * **Duels:** Implement one-on-one battles between players, offering the opportunity to wager items or Golden Uruk coins for added stakes. ✅
+      * **Hardcore Duels:** Introduce intense duels where players risk losing items permanently, intensifying the thrill of competition. ⌛
+      * **Tournaments:** Enable players to participate in organized tournaments, featuring structured gameplay and lucrative rewards for top performers. ⌛
       * **Factions:** Allow players to align with in-game factions, unlocking exclusive quests and adventures tailored to each faction's storyline and objectives.
       * **Guilds:** Foster cooperation and camaraderie among players by introducing guilds, enabling collaborative gameplay, trade, and shared experiences within dedicated player communities.
 * **PHASE 4 - Version 2.0**

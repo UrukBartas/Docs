@@ -85,12 +85,14 @@ function generateMarkdownFactors(data, title) {
     markdownContent += `| Experience              | ${data.experience}  |\n`;
     markdownContent += `| Item Shop Price Factor  | ${data.itemShopItemPriceFactor}  |\n`;
     markdownContent += `| Item Roll Price Factor  | ${data.itemRollPriceFactor}  |\n`;
+    markdownContent += `| Golden Uruks            | ${data.goldenUruks}  |\n`;
     markdownContent += `\n`;
 
     markdownContent += `## Descriptions\n\n`;
     markdownContent += `- **Experience**: The factor of experience gained in the game. If it is 1, there is no bonus or penalty on the base experience obtained.\n`;
     markdownContent += `- **Item Shop Price Factor**: The factor for the prices of items in the shop.\n`;
     markdownContent += `- **Item Roll Price Factor**: The factor paid over the price of item rolls. Each time you roll, you pay more, but you can get better items.\n`;
+    markdownContent += `- **Golden Uruks**: The factor representing how much of the game's currency, Golden Uruks, is obtained.\n`;
 
     return markdownContent;
 }

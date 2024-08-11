@@ -1,2 +1,2 @@
-# 🔮 In-game chances
+# 🔮 In-game data
 

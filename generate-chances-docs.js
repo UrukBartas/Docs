@@ -11,6 +11,8 @@ const API_URLS = [
     { url: `${baseApi}stats/factors`, name: 'factors' },
     { url: `${baseApi}stats/get-quest-roll`, name: 'quest-roll' },
     { url: `${baseApi}stats/rarity-chances-shop-rolls`, name: 'rarity-chances-shop-rolls' },  // Nueva URL agregada aquí
+    { url: `${baseApi}stats/damage-effectiveness`, name: 'damage-effectiveness' },
+    { url: `${baseApi}stats/creature-weakness`, name: 'creature-weakness' }
 ];
 
 // Función para obtener datos del backend
@@ -22,6 +24,63 @@ async function fetchBackendData(url) {
         console.error(`Error fetching data from ${url}:`, error);
         return null;
     }
+}
+
+function generateMarkdownDamageEffectiveness(data, title) {
+    let markdownContent = `# ${title}\n\n`;
+
+    for (const damageType in data) {
+        markdownContent += `## ${damageType.charAt(0) + damageType.slice(1).toLowerCase()}\n\n`;
+
+        markdownContent += `**Strong Against:**\n`;
+        markdownContent += `\n| Monster Type   |\n`;
+        markdownContent += `|----------------|\n`;
+
+        data[damageType].strongAgainst.forEach(type => {
+            markdownContent += `| ${type.charAt(0) + type.slice(1).toLowerCase()} |\n`;
+        });
+
+        markdownContent += `\n**Weak Against:**\n`;
+        markdownContent += `\n| Monster Type   |\n`;
+        markdownContent += `|----------------|\n`;
+
+        data[damageType].weakAgainst.forEach(type => {
+            markdownContent += `| ${type.charAt(0) + type.slice(1).toLowerCase()} |\n`;
+        });
+
+        markdownContent += '\n';
+    }
+
+    return markdownContent;
+}
+
+
+function generateMarkdownCreatureWeakness(data, title) {
+    let markdownContent = `# ${title}\n\n`;
+
+    for (const creatureType in data) {
+        markdownContent += `## ${creatureType.charAt(0) + creatureType.slice(1).toLowerCase()}\n\n`;
+
+        markdownContent += `**Weak To:**\n`;
+        markdownContent += `\n| Damage Type   |\n`;
+        markdownContent += `|---------------|\n`;
+
+        data[creatureType].weakTo.forEach(type => {
+            markdownContent += `| ${type.charAt(0) + type.slice(1).toLowerCase()} |\n`;
+        });
+
+        markdownContent += `\n**Strong Against:**\n`;
+        markdownContent += `\n| Damage Type   |\n`;
+        markdownContent += `|---------------|\n`;
+
+        data[creatureType].strongAgainst.forEach(type => {
+            markdownContent += `| ${type.charAt(0) + type.slice(1).toLowerCase()} |\n`;
+        });
+
+        markdownContent += '\n';
+    }
+
+    return markdownContent;
 }
 
 // Función para generar contenido Markdown para "ganked-monsters-rates"
@@ -157,8 +216,12 @@ async function main() {
                 markdownContent = generateMarkdownFactors(data, name.replace(/-/g, ' ').replace(/^\w/, c => c.toUpperCase()));
             } else if (name === 'quest-roll') {
                 markdownContent = generateMarkdownQuestRoll(data, name.replace(/-/g, ' ').replace(/^\w/, c => c.toUpperCase()));
-            } else if (name === 'rarity-chances-shop-rolls') {  // Nuevo caso manejado aquí
+            } else if (name === 'rarity-chances-shop-rolls') {
                 markdownContent = generateMarkdownRarityChancesShopRolls(data, name.replace(/-/g, ' ').replace(/^\w/, c => c.toUpperCase()));
+            } else if (name === 'damage-effectiveness') {
+                markdownContent = generateMarkdownDamageEffectiveness(data, name.replace(/-/g, ' ').replace(/^\w/, c => c.toUpperCase()));
+            } else if (name === 'creature-weakness') {
+                markdownContent = generateMarkdownCreatureWeakness(data, name.replace(/-/g, ' ').replace(/^\w/, c => c.toUpperCase()));
             }
             const filePath = path.join(dir, `${name}.md`);
             fs.writeFileSync(filePath, markdownContent);

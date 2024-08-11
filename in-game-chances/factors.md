@@ -2,10 +2,10 @@
 
 | Factor                  | Value        |
 |-------------------------|--------------|
-| Experience              | 1  |
+| Experience              | 1.2  |
 | Item Shop Price Factor  | 1.012  |
 | Item Roll Price Factor  | 1.04  |
-| Golden Uruks            | 1  |
+| Golden Uruks            | 1.2  |
 
 ## Descriptions
 

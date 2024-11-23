@@ -24,6 +24,7 @@
 |---------------|
 | Piercing |
 | Poison |
+| Nature |
 
 **Strong Against:**
 
@@ -60,6 +61,7 @@
 | Poison |
 | Psychic |
 | Dark |
+| Nature |
 
 ## Dragon
 
@@ -76,6 +78,7 @@
 |---------------|
 | Fire |
 | Holy |
+| Nature |
 
 ## Demon
 
@@ -100,6 +103,8 @@
 
 | Damage Type   |
 |---------------|
+| Water |
+| Nature |
 
 **Strong Against:**
 
@@ -123,6 +128,7 @@
 
 | Damage Type   |
 |---------------|
+| Water |
 
 ## Construct
 
@@ -167,6 +173,7 @@
 | Damage Type   |
 |---------------|
 | Bludgeoning |
+| Water |
 
 ## Aberration
 

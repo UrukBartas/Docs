@@ -159,3 +159,34 @@
 | Undead |
 | Demon |
 
+## Water
+
+**Strong Against:**
+
+| Monster Type   |
+|----------------|
+| Elemental |
+
+**Weak Against:**
+
+| Monster Type   |
+|----------------|
+| Magic_beast |
+| Spirit |
+
+## Nature
+
+**Strong Against:**
+
+| Monster Type   |
+|----------------|
+| Elemental |
+| Beast |
+
+**Weak Against:**
+
+| Monster Type   |
+|----------------|
+| Undead |
+| Dragon |
+
